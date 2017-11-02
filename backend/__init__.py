@@ -1,36 +1,13 @@
-import random
-
-cards = {
-        'A' : '1',
-        '1' : '1',
-        '2' : '2',
-        '3' : '3',
-        '4' : '4',
-        '5' : '5',
-        '6' : '6',
-        '7' : '7',
-        '8' : '8',
-        '9' : '9',
-        '10' : '10',
-        'J' : '10',
-        'Q' : '10',
-        'K' : '10'
-}
-
 def process_user_query(query_string):
-    return 'Hi'
-
-
-def get_card():
-    chosen_card = random.choice(list(cards.keys()))
-    value = []
-    value.append(chosen_card)
-    value.append(cards[chosen_card])
-    return value
-
-def hit(sum,value):
-    return (sum+value)
-
-
-
-print(get_card())
+    places = {}
+    results = []
+    counter=1
+    results.append(f"Top places to visit in {query_string}")
+    file = open("Countries.txt",'r',encoding='utf-8')
+    for line in file:
+        places[line.split(' ')[0]] = line.split(' ')[1]
+    final = places[query_string].split(';')
+    for name in final:
+        results.append(f"{counter}. {name}")
+        counter += 1
+    return results

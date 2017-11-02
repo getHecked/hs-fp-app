@@ -1,0 +1,5 @@
+Spain Alhambra;Sagrada_Família;Park_Güell;Alcázar_of_Seville;Timanfaya_National_Park
+France Eiffel_Tower;The_Louvre;Arc_de_Triomphe;Disneyland_Paris;Palace_of_Versailles
+Germany Neuschwanstein_Castle;Europa-Park;Lake_Constance;Brandenburg_Gate;Reichstag_building
+Portugal Pena_Palace;Belém_Tower;Peneda-Gerês_National_Park;Quinta_da_Regaleira;São_Jorge_Castle
+Poland Wawel_Castle;Wieliczka_Salt_Mine;Białowieża_Forest;Auschwitz_concentration_camp;Malbork_Castle
