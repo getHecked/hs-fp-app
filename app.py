@@ -5,8 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def root():
-    user_sum=0
-    bot_sum=0
+
     return render_template('index.html')
 
 
